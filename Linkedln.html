@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <i class="fab fa-linkedin nav-logo"></i>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="nav-menu">
+            <div class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-user-friends"></i>
+                <span>Network</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-briefcase"></i>
+                <span>Jobs</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-comment-dots"></i>
+                <span>Messaging</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-bell"></i>
+                <span>Notifications</span>
+            </div>
+            <div class="nav-item">
+                <div class="profile-photo" style="width: 24px; height: 24px; background-color: #ddd; border-radius: 50%;"></div>
+                <span style="font-size: 0.75rem; color: #666666;">Me</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <!-- Left Sidebar -->
+        <div class="left-sidebar">
+            <div class="profile-card">
+                <div class="profile-background"></div>
+                <div class="profile-info">
+                    <div class="profile-photo"></div>
+                    <h2 class="profile-name">UWINEZA Ange Marie</h2>
+                    <p class="profile-headline">Ui/Ux designer| Innovator</p>
+                </div>
+            </div>
+            <div class="skills-card">
+                <h3>Skills</h3>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>UI/UX Design</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Feed -->
+        <div class="feed">
+            <div class="post-box">
+                <div class="post-input">
+                    <div class="post-input-profile"></div>
+                    <button>Start a post</button>
+                </div>
+                <div class="post-actions">
+                    <div class="post-action">
+                        <i class="fas fa-image" style="color: #70b5f9;"></i>
+                        <span>Photo</span>
+                    </div>
+                    <div class="post-action">
+                        <i class="fas fa-video" style="color: #7fc15e;"></i>
+                        <span>Video</span>
+                    </div>
+                    <div class="post-action">
+                        <i class="fas fa-calendar-alt" style="color: #e7a33e;"></i>
+                        <span>Event</span>
+                    </div>
+                    <div class="post-action">
+                        <i class="fas fa-newspaper" style="color: #fc9295;"></i>
+                        <span>Write article</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sample Posts -->
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-author-image"></div>
+                    <div class="post-author-info">
+                        <div class="post-author-name">Umuhoza Nelly</div>
+                        <div class="post-author-headline">Following</div>
+                        <div class="post-time">1h • <i class="fas fa-globe-americas"></i></div>
+                    </div>
+                </div>
+                <div class="post-content">
+                    Had the pleasure to represent DAAD at the 2023 Forbes 30 Under 30 Africa Summit in Gaborone, Botswana with my friends Albert Munyambango and Yassouid Nwala!
+                </div>
+                <div class="post-images">
+                    <div class="post-image">
+                    </div>
+                    <div class="post-image"></div>
+                    <div class="post-image"></div>
+                </div>
+                <div class="post-engagement">
+                    <i class="far fa-thumbs-up"></i> 245 • 18 comments
+                </div>
+                
+                <!-- Who Viewed Your Post -->
+                <div class="who-viewed">
+                    <div class="who-viewed-title">Who viewed your post</div>
+                    <div class="who-viewed-item">
+                        <div class="who-viewed-image"></div>
+                        <span>John Doe</span>
+                    </div>
+                    <div class="who-viewed-item">
+                        <div class="who-viewed-image"></div>
+                        <span>Jane Smith</span>
+                    </div>
+                    <div class="who-viewed-item">
+                        <div class="who-viewed-image"></div>
+                        <span>Michael Johnson</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Posts here -->
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="right-sidebar-title">Add to your feed</div>
+            <div class="right-sidebar-item">#AI Community</div>
+            <div class="right-sidebar-item">#Web Development</div>
+            <div class="right-sidebar-title">Who's hiring on LinkedIn</div>
+            <div class="right-sidebar-item">Company A</div>
+            <div class="right-sidebar-item">Company B</div>
+            <div class="right-sidebar-item">Company C</div>
+        </div>
+    </div>
+</body>
+</html>

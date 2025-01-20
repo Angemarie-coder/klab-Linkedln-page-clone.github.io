@@ -1,0 +1,307 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* Light text color */
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #1e1e1e; /* Navbar background */
+            padding: 0 24px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .nav-logo {
+            color: #0a66c2; /* LinkedIn Blue */
+            font-size: 2.2rem;
+            margin-right: 16px;
+        }
+
+        .search-box {
+            background-color: #2a2a2a; /* Search box background */
+            padding: 0 16px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            width: 280px;
+            height: 34px;
+            margin-right: 16px;
+        }
+
+        .search-box input {
+            background: transparent;
+            border: none;
+            width: 100%;
+            margin-left: 8px;
+            color: #ffffff; /* Input text color */
+        }
+
+        .nav-menu {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #ffffff; /* Light text color */
+            font-size: 0.75rem;
+            cursor: pointer;
+        }
+
+        .nav-item i {
+            font-size: 1.3rem;
+            margin-bottom: 3px;
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1128px;
+            margin: 72px auto 0;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 225px auto 300px;
+            gap: 24px;
+        }
+
+        /* Left Sidebar */
+        .profile-card {
+            background-color: #1e1e1e; /* Sidebar background */
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            overflow: hidden;
+            margin-bottom: 16px;
+        }
+
+        .profile-background {
+            height: 54px;
+            background-color: #333; /* Profile background */
+        }
+
+        .profile-info {
+            text-align: center;
+            padding-bottom: 24px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .profile-photo {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            border: 2px solid #1e1e1e;
+            margin-top: -38px;
+            background-color: #555; /* Profile photo background */
+        }
+
+        .profile-name,
+        .profile-headline {
+            color: #ffffff; /* Light text color */
+        }
+
+        /* Main Feed */
+        .post-box {
+            background-color: #1e1e1e; /* Post box background */
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .post-input {
+            display: flex;
+            gap: 8px;
+        }
+
+        .post-input-profile {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #555; /* Profile photo background */
+        }
+
+        .post-input button {
+            flex: 1;
+            background-color: #2a2a2a; /* Button background */
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 35px;
+            padding: 12px 16px;
+            text-align: left;
+            color: #ffffff; /* Button text color */
+            cursor: pointer;
+            font-size: 0.875rem;
+        }
+
+        .post-actions {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 8px;
+            padding-top: 8px;
+        }
+
+        .post-action {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.875rem;
+            padding: 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .post-action:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Posts */
+        .post {
+            background-color: #1e1e1e; /* Post background */
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            margin-bottom: 8px;
+            padding: 12px 16px;
+        }
+
+        .post-header {
+            display: flex;
+            gap: 8px;
+        }
+
+        .post-author-image {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #555; /* Author image background */
+        }
+
+        .post-author-info {
+            flex: 1;
+        }
+
+        .post-author-name {
+            font-weight: 600;
+            color: #ffffff; /* Light color */
+        }
+
+        .post-author-headline,
+        .post-time {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.6); /* Light color */
+        }
+
+        .post-content {
+            margin: 12px 0;
+            color: #ffffff; /* Light text color */
+        }
+
+        /* Image Grid */
+        .post-images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+
+        .post-image {
+            height: 150px;
+            background-color: #555; /* Placeholder color */
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .post-engagement {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.6);
+            padding: 8px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        /* Who viewed your post */
+        .who-viewed {
+            background-color: #1e1e1e; /* Who viewed section background */
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            margin-top: 16px;
+            padding: 12px;
+        }
+
+        .who-viewed-title {
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #ffffff; /* Light color */
+        }
+
+        .who-viewed-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .who-viewed-image {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #555; /* Placeholder color */
+            margin-right: 8px;
+        }
+
+        /* Right Sidebar */
+        .right-sidebar {
+            background-color: #1e1e1e; /* Sidebar background */
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 12px;
+        }
+
+        .right-sidebar-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #ffffff; /* Light color */
+        }
+
+        .right-sidebar-item {
+            margin-bottom: 12px;
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        @media (max-width: 1024px) {
+            .main-content {
+                grid-template-columns: 225px auto;
+            }
+            .right-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            .left-sidebar {
+                display: none;
+            }
+            .search-box {
+                display: none;
+            }
+        }
+    
